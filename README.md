@@ -26,17 +26,20 @@ This project aims to be a answer for the [React Native Test](./teste_react_nativ
 This template follows a very simple project structure:
 
 - `src`: This folder is the main container of all the code inside the application.
-  - `assets`: Asset folder to store all images, vectors, etc (expose the combined result using its `index.js`).
+  - `assets`: Asset folder to store all images, vectors, etc (expose the combined result using its `index.ts`).
+  - `types`: Generic types that are needed in exclusive cases.
   - `components`: Folder to store any common component that you use through the app (such as a generic button)
+  - `service`: Folder to store all code related to network requests made through axios
+  - `layouts`: Folder to store structures to keep the app design more consistent
   - `screens`: Folder that contains all the application screens/features.
-    - `index.js`: Main component that starts the whole app.
+    - `index.ts`: Main component that starts the whole app.
     - `Screen`: Each screen should be stored inside its folder and inside it a file for its code and a separate one for the styles and tests.
       - `Screen.tsx`
       - `Screen.styles.tsx`
       - `types.ts`
   - `store`: Folder to put all redux related code.
     - `actions`: This folder contains all actions that can be dispatched to redux.
-    - `reducers`: This folder should have all the reducers, and expose the combined result using its `index.js`
+    - `reducers`: This folder should have all the reducers, and expose the combined result using its `index.ts`
     - `hooks.tsx`: Typed redux hooks for global use.
     - `rootReducer.tsx`: combineReducers returning rootReducer.
     - `index.tsx`: Main redux/redux-persist settings.
@@ -50,7 +53,7 @@ This template follows a very simple project structure:
 
 - First steps after cloning the repository:
 - Run `yarn` to download dependencies
-- Go to iOS folter through `cd/ios`
+- Go to iOS folder through `cd/ios`
 - Run `pod install` or `pod install --repo-update` to donwload CocoaPods dependencies
 
 After those steps you are good to go!
