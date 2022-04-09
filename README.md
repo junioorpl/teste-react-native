@@ -44,7 +44,7 @@ This template follows a very simple project structure:
     - `rootReducer.tsx`: combineReducers returning rootReducer.
     - `index.tsx`: Main redux/redux-persist settings.
     - `types.ts`
-  - `baseStyles.tsx`: Global theme constants.
+  - `baseStyles.ts`: Global theme constants.
   - `index.tsx`: Entry point of the application as per React-Native standards.
 
 ## Setup environments
